@@ -1,0 +1,21 @@
+library(googleAnalyticsR)
+library(googleAuthR)
+
+gar_auth_service(json_file = "C:/.../My Project-a6d5d5c4e136.json",scope = "https://www.googleapis.com/auth/analytics")
+
+## get your accounts
+account_list <- ga_account_list()
+
+## account_list will have a column called "viewId"
+#account_list$viewId
+
+## View account_list and pick the viewId you want to extract data from
+ga_id <- 130244462
+
+
+teste <- google_analytics_4(ga_id, 
+                            date_range = c("2018-11-02","2018-11-08"), 
+                            metrics = c("users","sessions","uniqueEvents"), 
+                            dimensions = c("date","hour","minute","dimension1",
+                                           "source","pagePath"),
+                            anti_sample=TRUE)
