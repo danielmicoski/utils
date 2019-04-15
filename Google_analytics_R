@@ -1,6 +1,7 @@
 library(googleAnalyticsR)
 library(googleAuthR)
 
+
 gar_auth_service(json_file = "C:/.../My Project-a6d5d5c4e136.json",scope = "https://www.googleapis.com/auth/analytics")
 
 ## get your accounts
