@@ -1,0 +1,41 @@
+PIPENV
+
+- pipfile
+ pipfile.lock
+
+pipenv install package
+
+pipenv shell
+
+exit - deactivate
+
+pipenv run python
+
+pipenv install -r <location> - import requirements.txt
+
+pipenv lock -r > requirements.txt - list packages
+
+pipenv install pytest --dev
+
+pipenv uninstall <pkg>
+
+pipenv --python version
+
+pipenv --rm
+
+pipenv install 
+
+pipenv check
+
+pipenv graph
+
+pipenv lock
+
+pipenv install --ignore-pipfile
+
+- create file .env
+- SECRET_KEY = "MySuperSecretKey"
+pipenv run python
+import os
+os.environ['SECRET_KEY']
+

@@ -1,0 +1,12 @@
+{
+    "database": {
+      "driver": "{ODBC Driver 17 for SQL Server}",
+      "server": "name_server",
+      "db_name": "dbname",  
+      "trust": "Trusted_Connection=yes;",
+      "username": "Username",
+      "password": "Password",
+      "table_teste_name": "teste"
+    
+    }
+}
